@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.banner{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    transition: 0.5s;
+    position: relative;
+
+}
+
+header{
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+}
+
+.logo{
+    text-decoration: none;
+    color: #333;
+    transition: 0.5s;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+ul{
+    display: flex;
+    gap: 40px;
+    margin-left: 80vh;
+}
+
+li{
+    list-style-type: none;
+    font-weight: 500;
+    font-size: 1.2em;
+    color: #333;
+    transition: 0.5s;
+}
+
+.content{
+    position: relative;
+    max-width: 700px;
+    top: 100px;
+    left: 100px;
+}
+
+h2{
+    font-size: 5.5em;
+    color: #333;
+    transition: 0.5s;
+}
+
+span{
+    color: orange;
+}
+
+p{
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #666;
+    transition: 0.5s;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 15px 35px;
+    color: #fff;
+    background-color: orange;
+    font-size: 1.25em;
+    position: relative;
+    margin-right: 20px;
+    letter-spacing: 0.5px;
+    border-radius: 10px;
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+.btn{
+    color: #333;
+    background-color: transparent;
+}
+
+.daynight{
+    top: 500px;
+    left: 50%;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.banner.night{
+    background-color: #333;
+}
+
+.daynight ion-icon:nth-child(2),.banner.night .daynight ion-icon:nth-child(1){
+    display: none;
+}
+
+.banner.night .daynight ion-icon:nth-child(2){
+    display: block;
+}
+
+.banner.night header .logo,.banner.night .content p,.banner.night .content h2,.banner.night ul li, .banner.night .btn{
+    color: #fff;
+}
